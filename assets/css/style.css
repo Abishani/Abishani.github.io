@@ -790,23 +790,24 @@ a:hover {
 }
 
 .hero-single .breadcrumb .breadcrumb-item:before {
-  color: #706269;
+  color: #e9e3e6;
 }
 
 .hero-single .breadcrumb .breadcrumb-item.active {
-  color: #706269;
+  color: #f8ecf2;
 }
 
 .hero-single .breadcrumb a {
   color: #fff;
 }
 
-.breadcrumb-item{
+/* .breadcrumb-item{
   color: #f2f2f2;
 }
+
 .breadcrumb-item active{
   color: #f2f2f2;
-}
+} */
 
 /*--------------------------------------------------------------
 # About
