@@ -848,27 +848,93 @@ a:hover {
   background-color: #ff0055;
 }
 
+
 /*--------------------------------------------------------------
-# Services
+# Skills
 --------------------------------------------------------------*/
-.service-box {
-  background-color: #fff;
+
+.icon-box {
+  /* background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
-  text-align: center;
+  text-align: center; */
+  position: relative;
+  width: 300px;
+  height: 180px;
+  margin: 60px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(0px);
+  opacity: 1;
 }
 
-.service-box:hover .ico-circle {
+/* .icon-box:hover .icoImg-circle {
   transition: all 500ms ease;
   color: #fff;
   background-color: #ff0055;
   box-shadow: 0 0 0 10px #706269;
+} */
+
+.icon-box .service-icoImg {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.icon-box .icoImg-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*--------------------------------------------------------------
+# Interests
+--------------------------------------------------------------*/
+.service-box {
+  /* background-color: rgba(255, 255, 255, 0.274); */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(0px);
+  opacity: 1;
+  
+
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: rgb(0, 0, 0);
+  background-color: #ff0055;
+  box-shadow: 0 0 0 10px #2b2929;
 }
 
 .service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1e1e1e;
+  color: #ffffff;
 }
 
 .service-box .ico-circle {
@@ -888,6 +954,7 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   padding: .4rem 0;
+  color: #ffffff;
 }
 
 .service-box .s-description {
@@ -931,7 +998,22 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #fff;
+  /* background-color: rgb(71, 71, 71); */
+
+  background: rgba(255, 255, 255, 0.1);
+  /* padding: 2.5rem 1.3rem; */
+  border-radius: 1rem;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .work-box:hover img {
@@ -958,6 +1040,8 @@ a:hover {
 
 .work-content .w-more .w-ctegory {
   color: #ff0055;
+  font-weight: bolder;
+  font-size: 0.9rem;
 }
 
 .work-content .w-like {
@@ -975,7 +1059,8 @@ a:hover {
 }
 
 .w-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -1225,6 +1310,22 @@ a:hover {
 @media (min-width: 767px) {
   .card-blog {
     margin-bottom: 3rem;
+    /* background-color: #473c40; */
+
+    background: rgba(255, 255, 255, 0.288);
+    /* padding: 2.5rem 1.3rem; */
+    border-radius: 1rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -1240,6 +1341,7 @@ a:hover {
   right: 15px;
   line-height: 25px;
   overflow: hidden;
+ 
 }
 
 .card-blog .card-category {
@@ -1249,6 +1351,7 @@ a:hover {
   overflow: hidden;
   background-color: #ff0055;
   border-radius: 4px;
+  
 }
 
 .card-blog .card-category .category {
@@ -1258,25 +1361,34 @@ a:hover {
   font-size: .7rem;
   letter-spacing: .1px;
   margin-bottom: 0;
+  
 }
 
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: .6rem;
+  color: #ffffff;
+  
 }
 
 .card-blog .card-description {
-  color: #4e4e4e;
+  color: #ffffff;
+  
 }
 
 .card-blog .post-author {
   display: inline-block;
+  font-weight: bolder;
+  color: #ffffff;
+  
 }
 
 .card-blog .post-date {
-  color: #4e4e4e;
+  color: #000000;
   display: inline-block;
   float: right;
+  font-weight: bolder;
+  
 }
 
 /*--------------------------------------------------------------
