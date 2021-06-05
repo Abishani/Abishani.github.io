@@ -23,7 +23,12 @@ h6 {
 }
 .lead{
   font-weight: 400;
+  color:#d1d8db;
 }
+.title-c{
+  color: #c5c0c1;
+}
+
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -141,7 +146,7 @@ a:hover {
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
-  color: rgb(206, 206, 206);
+  color: #ff0055;
   font-size: 1.1rem;
 }
 
@@ -211,10 +216,12 @@ a:hover {
 /*------/ Socials /------*/
 .socials {
   padding: 1.5rem 0;
+  
 }
 
 .socials ul li {
   display: inline-block;
+
 }
 
 .socials .ico-circle {
@@ -226,11 +233,12 @@ a:hover {
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #ff0055;
   transition: all 500ms ease;
+  color: rgb(255, 255, 255);
 }
 
 .socials .ico-circle:hover {
   background-color: #ff0055;
-  color: #fff;
+  color: rgb(27, 26, 26);
   box-shadow: 0 0 0 3px #706269;
   transition: all 500ms ease;
 }
@@ -240,10 +248,17 @@ a:hover {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+  font-size: 1.3rem;
 }
 
 .list-ico {
-  line-height: 2;
+  line-height: 3;
+  color: white;
+}
+
+.bi bi-geo-alt{
+  border: #ff0055;
+  border-width: 1.3rem;
 }
 
 .list-ico span {
@@ -1165,6 +1180,17 @@ a:hover {
   line-height: 1.6;
 }
 
+.interest{
+  text-align: center;
+  margin-bottom: 100px;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+
 @media (min-width: 768px) {
   .testimonial-box .description {
     padding: 0 5rem;
@@ -1196,7 +1222,7 @@ a:hover {
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fff;
+  background-color: #ff0055;
 }
 
 /*--------------------------------------------------------------
