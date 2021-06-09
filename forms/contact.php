@@ -1,27 +1,4 @@
 <?php
-    $name = $POST['name'];
-    $visitor_email = $POST['email'];
-    $message = $POST['message'];
-
-    $email_from = 'abishanimuthu@gmail.com';
-
-    $email_subject = "New Form Submission";
-
-    $email_body = "User Name : $name.\n".
-    "User Email : $visitor_email.\n".
-    "User Message : $message.\n";
-
-    $to = "abishani192000@gamil.com";
-
-    $headers = "From: $email_from \r\n";
-
-    $headers = "Reply-To: $visitor_email \r\n";
-
-    mail($to, $email_subject,$email_body,$headers);
-
-    header("Location: index.html");
-
-
   /**
   * Requires the "PHP Email Form" library
   * The "PHP Email Form" library is available only in the pro version of the template
