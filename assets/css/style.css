@@ -15,7 +15,7 @@ body {
 .hero-image {
   max-width: 100%; /* Adjust width as needed for better positioning */
   height: auto;
-  object-fit: cover;  /* Ensures image covers the full column */
+  object-fit:cover;  /* Ensures image covers the full column */
   transition: transform 0.5s ease-in-out; /* Add transition for smooth hover effect */
 }
 
@@ -29,6 +29,44 @@ body {
     width: 100%; /* Make image fill the entire width on small screens */
   }
 }
+
+.hero-title {
+  font-size: 2.5rem; /* Adjust size if needed */
+  margin-bottom: 0.5rem; /* Add space below the title */
+}
+
+.namesubtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem; /* Add space below the subtitle */
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem; /* Space above subtitle */
+  color: #888; /* Optional color tweak */
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto; /* Ensure image scales properly */
+  margin-top: 20px; /* Space between image and surrounding content */
+}
+
+@media (max-width: 768px) {
+  .hero-title, .namesubtitle, .hero-subtitle {
+    text-align: center; /* Center align for smaller screens */
+  }
+  .hero-image {
+    margin: 5px auto;
+    display: block;
+  }
+
+  #hero {
+    position: relative;
+    padding: 80px 0; /* Adjust top and bottom padding */
+  }
+}
+
 
 h1,
 h2,
@@ -117,6 +155,84 @@ a:hover {
     background-attachment: scroll;
   }
 }
+
+.about-section {
+  background-color: #1f1e1e; /* Dark background */
+  color: #fff; /* Light text */
+  padding: 50px 0; /* Add spacing */
+}
+
+.profile-img img {
+  border: 5px solid #ff0055; /* Pink border for the image */
+  border-radius: 10px;
+  width: 100%; /* Ensure the image is responsive */
+  max-width: 250px; /* Set max size */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ff0055; /* Accent color */
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.about-details .info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.info-list li strong {
+  color: #ff0055; /* Accent color for labels */
+}
+
+.action-buttons .btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #ff0055;
+  border: none;
+  color: #fff;
+}
+
+.btn-outline-secondary {
+  border: 2px solid #ff0055;
+  color: #ff0055;
+  background: transparent;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #ff0055;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #4e4c50;
+}
+
+@media (max-width: 768px) {
+  .about-section .row {
+    flex-direction: column;
+    text-align:justify;
+  }
+
+  .action-buttons {
+    margin-top: 20px;
+  }
+}
+
 
 /* .overlay-mf {
   background-color: #776c6e;
@@ -795,7 +911,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
